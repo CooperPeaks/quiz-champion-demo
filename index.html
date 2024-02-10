@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 
     <!-- Google Fonts -->
     <!-- Nunito 900 -->
@@ -27,20 +27,26 @@
     <main>
         <div class="grid">
             <div class="main_bloc">
-                <div class="card">
-                    <p>PARTIE RAPIDE</p>
-                    <div class="avatar"></div>
-                    <div class="txtBloc">
-                        <p>Choisis ton pseudo !</p>
-                        <input type="text">
+                <div class="left_card">
+                    <div class="cardTitle">
+                        <p>PARTIE RAPIDE</p>
                     </div>
-                    <button>Démarrer</button>
+                    <div class="avatar">
+                        <img src="pictures/raf,360x360,075,t,fafafa_ca443f4786.jpg" alt="">
+                    </div>
+                    <div class="txtBloc">
+                        <label for="pseudo">Choisis ton pseudo !</label>
+                        <input type="text" id="pseudo" name="pseudo" onchange="on()">
+                    </div>
+                    <div class="startButton">
+                        <button>Démarrer</button>
+                    </div>
                 </div>
             </div>
 
             <div class="right_bloc">
                 <div class="connect_card">
-                    <div class="buttons">
+                    <div class="connectButton">
                         <button>Connexion</button>
                     </div>
                 </div>
