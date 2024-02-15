@@ -46,12 +46,11 @@ function clickCard() {
                 easy.remove()
                 // Faire apparaître la question
                 const question = document.createElement('div')
-                const questiontxt = "Voulez-vous acheter des NFTs ?"
-                question.textContent = questiontxt
+                createQuestion(question)
                 newCard.appendChild(question)
                 createAnswers()
             }
-            if(button === medium){
+            if (button === medium) {
                 console.log('click3')
                 // Retirer les inputs
                 difficult.remove()
@@ -59,12 +58,11 @@ function clickCard() {
                 easy.remove()
                 // Faire apparaître la question
                 const question = document.createElement('div')
-                const questiontxt = "Voulez-vous acheter des NFTs ?"
-                question.textContent = questiontxt
+                createQuestion(question)
                 newCard.appendChild(question)
                 createAnswers()
             }
-            if(button === easy){
+            if (button === easy) {
                 console.log('click4')
                 // Retirer les inputs
                 difficult.remove()
@@ -72,13 +70,21 @@ function clickCard() {
                 easy.remove()
                 // Faire apparaître la question
                 const question = document.createElement('div')
-                const questiontxt = "Voulez-vous acheter des NFTs ?"
-                question.textContent = questiontxt
+                createQuestion(question)
+                console.log("hello1")
                 newCard.appendChild(question)
+                console.log("hello2")
                 createAnswers()
             }
         })
     })
+}
+
+function createQuestion(questionCard) {
+    // const questionCard = document.createElement('div')
+    const questiontxt = "Voulez-vous acheter des NFTs ?"
+    questionCard.textContent = questiontxt
+    return questionCard
 }
 
 function createAnswers() {
@@ -100,4 +106,5 @@ function createAnswers() {
     answerBloc.id = ('random')
     position.appendChild(answerBloc)
 }
+
 
