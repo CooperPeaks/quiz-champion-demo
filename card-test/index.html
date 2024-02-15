@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créateur de carte</title>
+</head>
+<body>
+    <main>
+        <form id="quizForm">
+            <label for="question">Question :</label>
+            <input type="text" id="question" required>
+
+            <label for="options">Options de réponse :</label>
+            <input type="text" id="options" required>
+
+            <label for="correctAnswer">Réponse correcte :</label>
+            <input type="text" id="correctAnswer" required>
+
+            <label for="explanation">Explication :</label>
+            <textarea id="explanation" required></textarea>
+
+            <button type="button" onclick="createQuestionCard()">Créer une carte</button>
+        </form>
+
+        <div id="createdCard"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
