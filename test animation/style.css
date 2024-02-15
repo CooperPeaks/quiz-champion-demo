@@ -1,0 +1,23 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+}
+#animatedElement{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 1;
+}
+
+#front{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: aqua;
+    z-index: 2;
+}
