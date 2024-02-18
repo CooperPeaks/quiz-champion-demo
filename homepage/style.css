@@ -163,7 +163,7 @@ header{
   height: 70px;
   width: 272px;
   border-radius: 89px;
-  background-color: #85DE00;
+  background-color: #FFD400;
   color: black;
   text-transform: uppercase;
   font-family: "Russo One", sans-serif;
@@ -171,8 +171,7 @@ header{
 }
 
 .start-button button:hover{
-  background-color: #479E01;
-  color: white;
+  background-color: #FFA800;
 }
 
 /* Register link */
