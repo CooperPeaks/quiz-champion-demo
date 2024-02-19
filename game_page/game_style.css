@@ -124,19 +124,24 @@ header {
 }
 
 .quest-container{
-    background-color: white;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;  
 }
 
 .question{
     color: black;
     font-size: 100px;
+    background-color: white;
+    /* border: none; */
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    font-family: "Russo One", sans-serif;
+}
+.question:hover{
+    background-color: rgb(232, 232, 232);
 }
 
 /* Score */
