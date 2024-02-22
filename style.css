@@ -69,30 +69,43 @@ main {
 }
 
 /* Connect card */
-.connect_card{
-    background-color: aliceblue;
+/* ... Your existing CSS code ... */
+/* ... Your existing CSS code ... */
+
+.flip-card {
+    position: relative;
+    perspective: 1000px;
+    height: 560px; /* Adjust height as needed */
+}
+
+.front-card,
+.back-card {
+    width: 350px;
+    height: 100%;
     border: solid 1px black;
-    border-radius: 30px;
-    width: 500px;
-    height: 200px;
-    /* margin: 20px; */
-}
-
-.connectButton {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.buttons button {
-    width: 50%;
-}
-
-/* Rules card */
-.rules_card{
     background-color: aliceblue;
-    border: solid 1px black;
     border-radius: 30px;
-    width: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s; /* Adjust the transition property */
+    transform-style: preserve-3d;
 }
+
+.back-card {
+    transform: rotateY(180deg);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.flip-card.flipped .front-card {
+    transform: rotateY(-180deg);
+}
+
+.flip-card.flipped .back-card {
+    transform: rotateY(0deg);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ... */
